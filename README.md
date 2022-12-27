@@ -1,4 +1,3 @@
-[![Build Status](https://app.travis-ci.com/Borlok/customerAchievement.svg?branch=master)](https://app.travis-ci.com/Borlok/customerAchievement)
 Приложение на получение ачивок пользователем
 
 Идея:

@@ -1,4 +1,0 @@
-language: java
-sudo: required
-after_deploy:
-  - mvn clean build
