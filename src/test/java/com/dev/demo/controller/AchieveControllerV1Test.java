@@ -5,6 +5,7 @@ import com.dev.demo.config.ControllerTestConfig;
 import com.dev.demo.dto.CustomerDto;
 import com.dev.demo.model.Customer;
 import com.dev.demo.service.AchieveService;
+import com.dev.demo.service.CustomerService;
 import com.dev.demo.service.LogService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -25,6 +26,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @ContextConfiguration(classes = {ControllerTestConfig.class, AchieveConfiguration.class})
 @MockBean(AchieveService.class)
 @MockBean(LogService.class)
+@MockBean(CustomerService.class)
 class AchieveControllerV1Test {
 
     @Autowired

@@ -5,5 +5,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface AchieveHandler {
-    Customer handleCustomer(Customer customer);
+    void handleCustomer(Customer customer);
 }

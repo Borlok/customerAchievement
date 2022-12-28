@@ -3,8 +3,8 @@ package com.dev.demo.service.impl;
 import com.dev.demo.model.UDAchieve;
 import com.dev.demo.model.Customer;
 import com.dev.demo.repository.AchieveRepository;
-import com.dev.demo.service.impl.achieve.AchieveHandler;
 import com.dev.demo.service.AchieveService;
+import com.dev.demo.service.impl.achieve.AchieveHandler;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
@@ -15,7 +15,6 @@ import java.util.Set;
 public class AchieveServiceV1Impl implements AchieveService {
     private final AchieveRepository repository;
     private final AchieveHandler achieveHandler;
-
 
     public AchieveServiceV1Impl(AchieveRepository repository, AchieveHandler achieveHandler) {
         this.repository = repository;
@@ -50,7 +49,7 @@ public class AchieveServiceV1Impl implements AchieveService {
     }
 
     @Override
-    public Customer handleCustomerAchieves(Customer customer) {
-        return achieveHandler.handleCustomer(customer);
+    public void handleCustomerAchieves(Customer customer) {
+        achieveHandler.handleCustomer(customer);
     }
 }

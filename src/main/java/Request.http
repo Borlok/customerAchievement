@@ -5,7 +5,7 @@ Content-Type: application/json
   "id": 1,
   "name": "Vlad",
   "lastName": null,
-  "balance": 0
+  "balance": 150000000
 }
 
 ###
