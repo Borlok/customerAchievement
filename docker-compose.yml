@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: db
+    volumes:
+      - ./database:/var/lib/mysql
+    ports:
+      - 2022:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: demo
+      MYSQL_DATABASE: demo
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: demo
+
+  spring:
+    build: .
+    container_name: spring
+    restart: always
+    environment:
+      DB_URL: jdbc:mysql://db:3306/demo
+      DB_USER_NAME: demo
+      DB_PASSWORD: demo
+    depends_on:
+      - db
+    ports:
+      - 8087:8087
