@@ -26,5 +26,7 @@
 
 Баланс указывается в копейках.
 
+Добавлен докер, поднять можно командой "docker-compose up"
+
 Стек:
-Java, Spring(Boot, Mvc, Data), MySql, Flyway, JUnit, Mockito
+Java, Spring(Boot, Mvc, Data), MySql, Flyway, JUnit, Mockito, Docker
